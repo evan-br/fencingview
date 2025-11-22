@@ -140,3 +140,5 @@ dmypy.json
 # Archived/temporary docs
 /archived/
 *.backup
+
+NEXT_STEPS.md
