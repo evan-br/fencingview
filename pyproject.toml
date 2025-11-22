@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fencingview"
+version = "0.0.1"
+description = "Computer Vision library for analyzing epee fencing matches from video"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Evandro Rissatto Pereira", email = "erissatto@gmail.com" },
+]
+keywords = [
+  "computer-vision",
+  "fencing",
+  "epee",
+  "yolo",
+  "mediapipe",
+  "pose-estimation",
+  "video-analysis",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+  "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+  "opencv-python>=4.8",
+  "ultralytics>=8.0",
+  "mediapipe>=0.10",
+  "numpy>=1.21",
+]
+
+[project.urls]
+Homepage = "https://github.com/evan-br/fencingview"
+Documentation = "https://github.com/evan-br/fencingview#readme"
+Repository = "https://github.com/evan-br/fencingview.git"
+"Bug Tracker" = "https://github.com/evan-br/fencingview/issues"
+Changelog = "https://github.com/evan-br/fencingview/releases"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
